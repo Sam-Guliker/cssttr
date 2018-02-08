@@ -14,4 +14,6 @@ It will contain my scedule and the progress I've made in the couple of weeks for
 Onderzoek gedaan naar grid, sketch notes bijgehouden.
 Een design gemaakt.
 
+gebruik gemaakt [grid](https://css-tricks.com/search-results/?q=grid)
+
 ![design](design.png)
