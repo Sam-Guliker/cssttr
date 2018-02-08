@@ -5,9 +5,9 @@ It will contain my scedule and the progress I've made in the couple of weeks for
 ## Scedule
 | Week 1        | Week 2|  Week 3  |
 | ------------- |:-------------:| -----:| 
-| Research    | Code | Code |$1600 |
-| Design    | Research |   $Code |
-| Code | Code    |   Code |
+| Research    | Code | Code |
+| Design    | Research |
+| Code | Code    | 
 
 
 ## Week 1
