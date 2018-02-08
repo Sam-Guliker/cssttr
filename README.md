@@ -17,3 +17,7 @@ Een design gemaakt.
 gebruik gemaakt [grid](https://css-tricks.com/search-results/?q=grid)
 
 ![design](design.png)
+
+## Referenties:
+Hierin zitten argumenten voor aanpassingen in de html.
+* https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
