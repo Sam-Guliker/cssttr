@@ -3,13 +3,15 @@
 It will contain my scedule and the progress I've made in the couple of weeks for this class.
 
 ## Scedule
-| Week 1        | Week 2|  Week 3  |  Week 3  |
-| ------------- |:-------------:| -----:| -----:|
-| col 3 is      | right-aligned | $1600 |$1600 |
-| col 2 is      | centered      |   $12 |  $12 |
-| zebra stripes | are neat      |    $1 |  $12 |
+| Week 1        | Week 2|  Week 3  |
+| ------------- |:-------------:| -----:| 
+| Research    | Code | Code |$1600 |
+| Design    | Research |   $Code |
+| Code | Code    |   Code |
 
 
 ## Week 1
+Onderzoek gedaan naar grid, sketch notes bijgehouden.
+Een design gemaakt.
 
-## license
+[design.png]()
