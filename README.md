@@ -14,4 +14,4 @@ It will contain my scedule and the progress I've made in the couple of weeks for
 Onderzoek gedaan naar grid, sketch notes bijgehouden.
 Een design gemaakt.
 
-[design](design.png)
+![design](design.png)
