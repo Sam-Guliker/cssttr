@@ -19,3 +19,7 @@ Een design gemaakt.
 Hier mee leer je beetje bij beetje over grid.
 
 ![design](design.png)
+
+## Referenties:
+Hierin zitten argumenten voor aanpassingen in de html.
+* https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
