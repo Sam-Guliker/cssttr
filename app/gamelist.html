@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OOP</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+  <main>
+    <form action="gamelist.html" method="post">
+
+      <!-- Legend toegevoegd zodat de gebruiker weet dat het een login scherm is.-->
+      <legend>Login</legend>
+
+        <label for="field-email">Email</label>
+        <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
+
+        <label for="field-password">Password</label>
+        <input type="password" id="field-password" name="field-password" required>
+
+        <input type="checkbox" id="field-stay-logged-in" name="field-stay-logged-in" value="stay-logged-in">
+        <label for="field-stay-logged-in">Stay logged in</label>
+
+        <a href="/">Forgot password</a>
+
+        <button type="submit">Login</button>
+
+    </form>
+  </main>
+
+</body>
+<script src="static/js/script.js"></script>
+</html>
