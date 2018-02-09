@@ -1,14 +1,47 @@
---root{
+--root {}
 
+@font-face {
+  font-family: Ampersand;
+  src: local('Baskerville'), local('Goudy Old Style'), local('Palatino'), local('Book Antiqua');
+  unicode-range: U+26;
 }
 
-body{
-  height:100vh;
-  width:100vw;
+h1 {
+  font-family: Ampersand, Helvetica, sans-serif;
 }
-form{
-  margin:auto;
-  height:100%;
-  width:30%;
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  margin: auto;
+  height: 100%;
+  width: 30%;
   background: #FFF;
+}
+/* .overlay {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+}
+.lightbox {
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+} */
+.main{
+  filter: blur(3px) contrast(.8) brightness(.8);
+}
+figure {
+  max-width: 300px;
+  max-width: min-content;
+  margin: auto;
+}
+figure > img {
+  max-width: inherit;
 }

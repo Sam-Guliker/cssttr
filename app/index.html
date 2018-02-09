@@ -8,28 +8,25 @@
   <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-  <!-- Method aangepast om door te kunnen gaan naar de volgende pagina. -->
-  <form action="gamelist.html" method="get">
-    <!-- Legend en een fieldset toegevoegd zodat de gebruiker weet dat het een login scherm is. src: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset-->
-    <fieldset>
+  <main>
+  <!-- -->
+  <h1> H & M</h1>
+  <div class="overlay"></div>
+  <div class="lightbox">
+    <h1>Les go</h1>
+    <p>some random text</p>
+  </div>
+  Some random text to fill up.
+  </main>
+  <dialog>oh hai I'm a dialog, click me to dismiss</dialog>
 
-      <legend>Login</legend>
-
-        <label for="field-email">Email</label>
-        <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
-
-        <label for="field-password">Password</label>
-        <input type="password" id="field-password" name="field-password" required>
-
-        <input type="checkbox" id="field-stay-logged-in" name="field-stay-logged-in" value="stay-logged-in">
-        <label for="field-stay-logged-in">Stay logged in</label>
-
-        <a href="/">Forgot password</a>
-
-        <button type="submit">Login</button>
-      </fieldset>
-
-  </form>
+  <p>Some text [...]</p> <figure>
+  <img src="adamcatlace.jpg" /> <figcaption>
+          The great Sir Adam Catlace was named after
+          Countess Ada Lovelace, the first programmer.
+      </figcaption>
+  </figure>
+  <p>More text [...].</p>
 
 </body>
 <script src="static/js/script.js"></script>
