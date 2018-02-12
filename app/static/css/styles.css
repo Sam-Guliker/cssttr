@@ -12,7 +12,15 @@
   margin:auto;
 }
 
-a,p,label,input,li,a{
+label{
+    padding: 1em 0px;
+}
+
+*:focus{
+  transform: scale(1.1);
+}
+
+a,p,label,input,li,a,legend{
   font-size: var(--font-size);
   font-family:var(--main-font-fam);
   color:var(--color-white);
@@ -35,8 +43,16 @@ body{
 
 form{
   margin:auto;
-  width:30%;
 }
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
+  border:none;
+  background: var(--main-bg-color);
+}
+
 nav{
   margin-top:3.25em;
   display:flex;
@@ -46,16 +62,18 @@ nav{
 }
 
 
-header > nav > ul, header > nav > ul >li{
+header > nav > ul,
+header > nav > ul >li{
   display:inline-block;
   padding-right:1.25em;
   text-transform: uppercase;
   font-weight: 800;
 }
-header > nav > ul, header > nav > ul >li:last-of-type{
+header > nav > ul,
+header > nav > ul > li:last-of-type{
   padding:0;
 }
-header > nav > ul, header > nav > ul{
+header > nav > ul{
   margin:0;
 }
 
@@ -72,29 +90,50 @@ main > ul > li > article{
   width:100%;
 }
 
-main > ul > a > li > article > figure{
+main > ul > li > article > figure{
   background-color:var(--color-white);
   margin:0;
   margin-bottom:2em;
 }
 
-main > ul > a > li > article  >figure > img{
+main > ul > li > article  >figure > img{
   width:100%;
 }
 
-main > ul > a > li > article > figure > figcaption{
+main > ul > li > article > figure > figcaption{
   color:#2e2e2e;
   padding:1em;
 }
 
-main > ul > a > li > article > figure > figcaption > p{
+main > ul > li > article > figure > figcaption > p{
   color:#2e2e2e;
   margin-top:0;
 }
+
+figcaption a{
+  color:#2e2e2e;
+}
+
 nav ul ul{
-  display:none;
+  position: relative;
+  position:absolute;
+  opacity:0;
+  height:1px;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+nav ul ul li{
+  padding:1em;
+  background-color: hsl(234,18%,40%);
+}
+
+nav ul a:focus+ul{
+    opacity:1;
+    height:auto;
 }
 nav ul ul:focus-within,
 nav ul ul:focus{
-  display:block;
+    opacity:1;
+    height:auto;
 }
