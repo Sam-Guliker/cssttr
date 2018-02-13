@@ -1,9 +1,19 @@
+/*
+
+  Main-code
+
+*/
 :root{
   --main-bg-color: linear-gradient(-45deg, hsl(234,18%,40%) 0%, hsl(233,25%,22%) 100%);
   --main-font-fam:'Roboto', sans-serif;
   --color-white:hsl(0, 100%, 100%);
   --color-logo:hsl(179, 79%, 45%);
   --font-size:1em;
+}
+
+*{
+  margin:0;
+  padding:0;
 }
 
 #login{
@@ -35,11 +45,17 @@ nav > a{
   font-weight: 800;
 }
 body{
-  max-width:1200px;
+  max-width:75em;
   margin:auto;
   background:var(--main-bg-color);
   margin-bottom:3.25em;
 }
+
+/*
+
+  Formulier
+
+*/
 
 form{
   margin:auto;
@@ -53,6 +69,11 @@ fieldset{
   background: var(--main-bg-color);
 }
 
+/*
+
+    Navigatie
+
+*/
 nav{
   margin-top:3.25em;
   display:flex;
@@ -64,7 +85,7 @@ nav{
 
 header > nav > ul,
 header > nav > ul >li{
-  display:inline-block;
+  display:flex;
   padding-right:1.25em;
   text-transform: uppercase;
   font-weight: 800;
@@ -77,43 +98,11 @@ header > nav > ul{
   margin:0;
 }
 
-main>ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2%;
-}
+/*
 
-main > ul > li > article{
-  width:100%;
-}
+  Tab nav
 
-main > ul > li > article > figure{
-  background-color:var(--color-white);
-  margin:0;
-  margin-bottom:2em;
-}
-
-main > ul > li > article  >figure > img{
-  width:100%;
-}
-
-main > ul > li > article > figure > figcaption{
-  color:#2e2e2e;
-  padding:1em;
-}
-
-main > ul > li > article > figure > figcaption > p{
-  color:#2e2e2e;
-  margin-top:0;
-}
-
-figcaption a{
-  color:#2e2e2e;
-}
-
+*/
 nav ul ul{
   position: relative;
   position:absolute;
@@ -136,4 +125,48 @@ nav ul ul:focus-within,
 nav ul ul:focus{
     opacity:1;
     height:auto;
+}
+
+
+/*
+
+  Artikelen
+
+*/
+
+main>ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2%;
+}
+
+article{
+  width:100%;
+}
+
+article > figure{
+  background-color:var(--color-white);
+  margin:0;
+  margin-bottom:2em;
+}
+
+article  >figure > img{
+  width:100%;
+}
+
+article > figure > figcaption{
+  color:#2e2e2e;
+  padding:1em;
+}
+
+figure > figcaption > p{
+  color:#2e2e2e;
+  margin-top:0;
+}
+
+figcaption a{
+  color:#2e2e2e;
 }
