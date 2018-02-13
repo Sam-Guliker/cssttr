@@ -133,9 +133,9 @@ nav{
   margin-bottom:2.5em;
 }
 
-nav > a:first-of-type{
+nav > a:nth-child(1),
+nav > a:nth-child(2)  {
   position: absolute;
-  left: 8em;
   top: 2em;
   height: 1px;
   width: 1px;
@@ -146,12 +146,19 @@ nav > a:first-of-type{
   background:white;
   z-index: -9000;
 }
+nav > a:nth-child(1){
+  left:8em;
+}
+nav > a:nth-child(2){
+  left:12em;
+}
 
-nav > a:first-of-type:active,
-nav > a:first-of-type:focus,
-nav > a:first-of-type:hover{
-  left: 8em;
-  top: 2em;
+nav > a:nth-child(1):active,
+nav > a:nth-child(1):focus,
+nav > a:nth-child(1):hover,
+nav > a:nth-child(2):active,
+nav > a:nth-child(2):focus,
+nav > a:nth-child(2):hover{
   width: auto;
   height: auto;
   overflow: visible;
@@ -281,15 +288,18 @@ fieldset label{
 fieldset label:first-of-type{
   margin:0;
 }
-body footer{
+body>footer{
   position: fixed;
   box-sizing: border-box;
   background: black;
   bottom: 0;
   right: 0;
-  height:0;
+  height:0;   
   transition: all 0.4s ease-in-out;
 }
-body footer:focus{
-  height:auto;
+body > footer:focus,
+body > footer:active,
+body > footer:hover,
+body > footer:target{
+  height:auto;  
 }
