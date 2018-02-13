@@ -256,3 +256,15 @@ fieldset label{
 fieldset label:first-of-type{
   margin:0;
 }
+body footer{
+  position: fixed;
+  box-sizing: border-box;
+  background: black;
+  bottom: 0;
+  right: 0;
+  height:0;
+  transition: all 0.4s ease-in-out;
+}
+body footer:focus{
+  height:auto;
+}
