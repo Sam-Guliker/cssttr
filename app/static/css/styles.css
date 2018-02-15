@@ -11,6 +11,7 @@
   --color-form:hsl(179, 79%, 45%);
   --font-size:1em;
   --line-height:1.6;
+  --chat-bg:hsl(233,25%,22%);
 }
 
 *{
@@ -18,15 +19,31 @@
   padding:0;
 }
 
-#login{
+#login, #about, #detail{
   display:flex;
   height:100vh;
   margin:auto;
+  flex-direction: column;
 }
-
+#about article{
+  animation: fade-in-bottom 0.4s forwards;
+  max-width: 75em;
+}
+#about article p{
+  padding-top:1em;
+  max-width:70%;
+  margin:auto;
+}
+#about img{
+  max-width:100%;
+  max-height:100%;
+}
+#about h1 a:focus{
+  transform:none;
+}
 *:focus{
   outline:none;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.7s ease-in-out;
   transform: scale(1.1);
 }
 
@@ -67,11 +84,16 @@ form {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   flex-direction: row;
   padding: 3rem;
+  opacity: 0;
+  animation: fade-in-bottom 0.4s forwards;
 }
 form h1{
   display:block;
   width:100%;
   font-size: 150%;
+}
+h1 a{
+  margin:1em 0;
 }
 
 input[type="checkbox"]{
@@ -126,6 +148,7 @@ form a{
 
 */
 nav{
+  position:relative;
   margin-top:3.25em;
   display:flex;
   flex-direction: row;
@@ -136,7 +159,6 @@ nav{
 nav > a:nth-child(1),
 nav > a:nth-child(2)  {
   position: absolute;
-  top: 2em;
   height: 1px;
   width: 1px;
   text-align: left;
@@ -182,6 +204,7 @@ header > nav > ul > li:last-of-type{
 }
 header > nav > ul{
   margin:0;
+  z-index: 3;
 }
 
 /*
@@ -232,6 +255,7 @@ main>ul{
 }
 
 article{
+  overflow:hidden;
   width:100%;
 }
 
@@ -240,6 +264,8 @@ article figure{
   margin:0;
   margin-bottom:2em;
   overflow:hidden;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  animation: fade-in-bottom 1s forwards;
 }
 article a {
   height:100%;
@@ -247,7 +273,8 @@ article a {
 }
 
 article figure img{
-  width:100%;
+  object-fit: cover;
+  max-height:22em;
 }
 
 article figure figcaption{
@@ -261,7 +288,11 @@ figure figcaption p{
 }
 
 figcaption a{
-  color:#2e2e2e;
+  color: var(--color-logo);
+}
+figcaption a:focus{
+  transform: scaleX(1.03);
+
 }
 
 /*
@@ -273,9 +304,15 @@ fieldset{
   border:0;
 }
 
-fieldset input{
+figcaption fieldset input{
+  transform-origin: 50% 50%;
   opacity: 0;
-  display:none;
+  position: absolute;
+  left: -999px;
+}
+
+fieldset input:focus + label{
+  animation: rotate .8s infinite;
 }
 fieldset legend{
   display: none;
@@ -294,12 +331,139 @@ body>footer{
   background: black;
   bottom: 0;
   right: 0;
-  height:0;   
+  height:0;
   transition: all 0.4s ease-in-out;
 }
 body > footer:focus,
 body > footer:active,
 body > footer:hover,
 body > footer:target{
-  height:auto;  
+  height:auto;
+}
+
+/*
+
+  Detail
+
+*/
+
+#detail article{
+  display:flex;
+  flex-direction: row;
+  animation: fade-in-bottom 0.4s forwards;
+}
+#detail article > nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  margin: 2em;
+  width: 20%;
+  margin-top: 1em;
+}
+progress {
+  width: 100%;
+  display: block;
+  height: 2em;
+}
+article section{
+  width:80%;
+}
+article section img{
+  width:100%;
+}
+ol li{
+  list-style: none;
+  padding: 1em;
+  background: coral;
+  margin:0.2em 0;
+}
+nav>ol>li:nth-child(n+2){
+  opacity: 0.4;
+}
+
+/*
+
+  Chat
+
+*/
+
+#chatbox {
+  background:var(--chat-bg);
+  border-radius: .3em;
+  padding-top:0;
+}
+
+#chatbox ol{
+  padding:1em;
+  padding-bottom: 0;
+}
+
+#chatbox form {
+  background:var(--chat-bg);
+  padding:1em;
+  max-width: 18.5em;
+  box-shadow:none;
+  padding-top: 0;
+}
+
+/* Rendering issue  maakt het niet mogelijk om de margin op EM of een andere waarde te gebruiken (bv vh etc.)*/
+#chatbox ol li{
+  border-radius:0.2em;
+  margin: 4px 0;
+}
+
+#chatbox ol li:nth-child(1){
+  opacity:.6;
+}
+
+#chatbox ol li:nth-child(2){
+  opacity:.8;
+  background: var(--color-logo);
+}
+
+form > textarea{
+  width:100%;
+  padding: 2em 0;
+  border-radius: 0.4em;
+}
+
+footer form  label{
+  padding-top:0;
+  padding: 0.4em 0;
+}
+#chatbox ol li footer p{
+  color:var(--chat-bg);
+}
+
+/*
+
+  Animaties
+
+*/
+
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity:1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes rotate {
+  20% {
+    transform: rotate(45deg)
+  }
+  40% {
+    transform: rotate(-30deg)
+  }
+  60%{
+    transform: rotate(15deg)
+  }
+  80%{
+    transform: rotate(-5deg)
+  }
 }
