@@ -1,14 +1,13 @@
 /*
 
-  Main-code
+  Main-code & Variabelen
 
 */
 :root{
   --main-bg-color: linear-gradient(-45deg, hsl(234,18%,40%) 0%, hsl(233,25%,22%) 100%);
   --main-font-fam:'Roboto', sans-serif;
   --color-white:hsl(0, 100%, 100%);
-  --color-logo:hsl(179, 79%, 45%);
-  --color-form:hsl(179, 79%, 45%);
+  --color-blue:hsl(179, 79%, 45%);
   --font-size:1em;
   --line-height:1.6;
   --chat-bg:hsl(233,25%,22%);
@@ -19,34 +18,42 @@
   padding:0;
 }
 
-#login, #about, #detail{
+#login{
   display:flex;
   height:100vh;
   margin:auto;
   flex-direction: column;
+  padding:0;
 }
 #about article{
   animation: fade-in-bottom 0.4s forwards;
   max-width: 75em;
 }
-#about article p{
-  padding-top:1em;
-  max-width:70%;
-  margin:auto;
-}
+
 #about img{
   max-width:100%;
   max-height:100%;
 }
-#about h1 a:focus{
-  transform:none;
-}
 *:focus{
   outline:none;
-  transition: all 0.7s ease-in-out;
-  transform: scale(1.1);
 }
 
+
+body{
+  max-width:75em;
+  margin:auto;
+  background:var(--main-bg-color);
+  margin-bottom:3.25em;
+  line-height:var(--line-height);
+  padding:2em;
+  padding-bottom:0;
+}
+
+/*
+
+  Typografie
+
+*/
 a,p,label,input,li,a,legend,h1,h2{
   font-size: var(--font-size);
   font-family:var(--main-font-fam);
@@ -54,20 +61,85 @@ a,p,label,input,li,a,legend,h1,h2{
   text-decoration: none;
 }
 nav > a{
-  color:var(--color-logo);
+  color:var(--color-blue);
   text-decoration:none;
   padding-right:1.25em;
   text-transform: uppercase;
   font-weight: 800;
 }
-body{
-  max-width:75em;
-  margin:auto;
-  background:var(--main-bg-color);
-  margin-bottom:3.25em;
-  line-height:var(--line-height);
+nav > a:focus:nth-child(1){
+  transform:scale(1.5) rotate(180deg);
+}
+article a{
+  transition:all 0.3s ease-in-out;
+  height:100%;
+  display: block;
+}
+article a:focus{
+  transform:scale(2.3) rotate(360deg);
 }
 
+#about article p{
+  padding-top:1em;
+  max-width:70%;
+  margin:auto;
+}
+form h1{
+  display:block;
+  width:100%;
+  font-size: 150%;
+}
+h1, h1 a{
+  padding:0.2em 0;
+  font-size:1.45em;
+  transform:none;
+}
+
+article figure figcaption{
+  color:#2e2e2e;
+  padding:1em;
+  margin-top:-1em;
+}
+
+figure figcaption p{
+  color:#2e2e2e;
+  margin-top:0;
+}
+
+figcaption a{
+  color: var(--color-blue);
+}
+figcaption a:focus{
+  transform: scaleX(1.03);
+}
+ol li{
+  list-style: none;
+  background: coral;
+  margin:0.2em 0;
+}
+ol li a {
+    padding: 1em;
+}
+ol>li:nth-child(n+3){
+  padding: 1em;
+}
+ol>li:nth-child(4){
+  opacity:.4;
+}
+ol li a:focus-within{
+
+}
+
+article section p{
+  padding-top:0.4em;
+}
+main{
+  transition: all 0.3 ease;
+  transform: scale(1);
+}
+/* main{
+  transform: scale(1.04);
+} */
 /*
 
   Formulier
@@ -86,14 +158,6 @@ form {
   padding: 3rem;
   opacity: 0;
   animation: fade-in-bottom 0.4s forwards;
-}
-form h1{
-  display:block;
-  width:100%;
-  font-size: 150%;
-}
-h1 a{
-  margin:1em 0;
 }
 
 input[type="checkbox"]{
@@ -124,14 +188,13 @@ form button {
   border: 0;
   padding:2em;
   color: #2e2e2e;
-  -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
 }
 form button:hover,
 form button:active,
 form button:focus {
-  background: var(--color-logo);
+  background: var(--color-blue);
 }
 
 form a{
@@ -156,9 +219,10 @@ nav{
   margin-bottom:2.5em;
 }
 
-nav > a:nth-child(1),
-nav > a:nth-child(2)  {
+nav > a:nth-child(2),
+nav > a:nth-child(3)  {
   position: absolute;
+  margin-top:-1em;
   height: 1px;
   width: 1px;
   text-align: left;
@@ -168,19 +232,19 @@ nav > a:nth-child(2)  {
   background:white;
   z-index: -9000;
 }
-nav > a:nth-child(1){
+nav > a:nth-child(2){
   left:8em;
 }
-nav > a:nth-child(2){
+nav > a:nth-child(3){
   left:12em;
 }
 
-nav > a:nth-child(1):active,
-nav > a:nth-child(1):focus,
-nav > a:nth-child(1):hover,
 nav > a:nth-child(2):active,
 nav > a:nth-child(2):focus,
-nav > a:nth-child(2):hover{
+nav > a:nth-child(2):hover,
+nav > a:nth-child(3):active,
+nav > a:nth-child(3):focus,
+nav > a:nth-child(3):hover{
   width: auto;
   height: auto;
   overflow: visible;
@@ -195,8 +259,12 @@ header > nav > ul >li{
   text-transform: uppercase;
   font-weight: 800;
 }
+header a {
+      transition: all 0.3s ease;
+}
 header li a:focus{
-    color:var(--color-logo);
+    color:var(--color-blue);
+    transform:scale(1.5) rotate(180deg);
 }
 header > nav > ul,
 header > nav > ul > li:last-of-type{
@@ -229,11 +297,15 @@ nav ul ul li{
 }
 
 nav ul a:focus+ul{
+    transition: all 0.4s ease-in-out;
     opacity:1;
     height:auto;
+    transform:scale(1.5) rotate(180deg);
 }
 nav ul ul:focus-within,
 nav ul ul:focus{
+    transition: all 0.4s ease-in-out;
+    transform:scale(1.5) rotate(360deg);
     opacity:1;
     height:auto;
 }
@@ -250,7 +322,7 @@ main>ul{
   margin: 0;
   padding: 0;
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: 49% 49%;
   grid-gap: 2%;
 }
 
@@ -267,33 +339,19 @@ article figure{
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   animation: fade-in-bottom 1s forwards;
 }
-article a {
-  height:100%;
-  display: block;
+footer a:focus{
+  display:block;
+  animation: ext-left 1s infinite;
+}
+article a:focus{
+  color:var(--color-blue);
 }
 
 article figure img{
   object-fit: cover;
-  max-height:22em;
+  max-height:26em;
 }
 
-article figure figcaption{
-  color:#2e2e2e;
-  padding:1em;
-}
-
-figure figcaption p{
-  color:#2e2e2e;
-  margin-top:0;
-}
-
-figcaption a{
-  color: var(--color-logo);
-}
-figcaption a:focus{
-  transform: scaleX(1.03);
-
-}
 
 /*
 
@@ -346,6 +404,9 @@ body > footer:target{
   Detail
 
 */
+#detail{
+  height:100vh;
+}
 
 #detail article{
   display:flex;
@@ -359,6 +420,7 @@ body > footer:target{
   margin: 2em;
   width: 20%;
   margin-top: 1em;
+  margin-right:0;
 }
 progress {
   width: 100%;
@@ -371,14 +433,17 @@ article section{
 article section img{
   width:100%;
 }
-ol li{
-  list-style: none;
-  padding: 1em;
-  background: coral;
-  margin:0.2em 0;
+#detail article a:focus{
+  color: var(--color-white);
+  background-color:black;
+  transform:scale(1) rotate(0);
 }
-nav>ol>li:nth-child(n+2){
-  opacity: 0.4;
+#detail article h1 a:focus{
+  background:none;
+}
+#about article h1 a:focus{
+  background:none;
+  transform:none;
 }
 
 /*
@@ -418,7 +483,7 @@ nav>ol>li:nth-child(n+2){
 
 #chatbox ol li:nth-child(2){
   opacity:.8;
-  background: var(--color-logo);
+  background: var(--color-blue);
 }
 
 form > textarea{
@@ -465,5 +530,104 @@ footer form  label{
   }
   80%{
     transform: rotate(-5deg)
+  }
+}
+@keyframes wiggle {
+  20% {
+    transform: rotate(10deg)
+  }
+  40% {
+    transform: rotate(-10deg)
+  }
+  60%{
+    transform: rotate(5deg)
+  }
+  80%{
+    transform: rotate(-5deg)
+  }
+}
+@keyframes ext-left {
+  20% {
+    transform: skewX(20deg);
+  }
+  40% {
+    transform: skewY(5deg);
+  }
+  100% {
+    transform: skewX(0) skewY(0);
+  }
+}
+@media (max-width: 50.75em) {
+  body{
+    max-width:initial;
+  }
+  nav{
+    flex-direction:column;
+  }
+  header  ul,
+  nav ul li{
+    flex-direction:column;
+  }
+  header{
+    text-align:center;
+  }
+  nav > a:nth-child(1),
+  nav > a:nth-child(2){
+    position: initial;
+    height: initial;
+    width: initial;
+    text-align: center;
+    overflow: initial;
+    opacity:1;
+    padding:0;
+    background:white;
+    z-index: initial;
+    top:initial;
+  }
+  main>ul{
+    grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+  nav > a:nth-child(1), nav > a:nth-child(2){
+    margin:initial;
+    padding: 10px 0;
+  }
+  nav  a{
+    padding:10px 0;
+  }
+  header > nav > ul,
+  header > nav > ul >li{
+
+    padding:0;
+
+  }
+  #about article p{
+    max-width:100%;
+  }
+  nav{
+    margin:0;
+  }
+  nav ul ul{
+    margin-top:0;
+    padding:0;
+    left: 1em;
+    top: 8em;
+  }
+  article section{
+    width:100%;
+  }
+  #detail article{
+    flex-direction: column;
+  }
+  #detail article > nav{
+    margin:0;
+    margin-top: 2em;
+    width:100%;
+    margin-bottom:2em;
+  }
+}
+@media (max-width: 25em){
+  article figure img{
+    max-height:12em;
   }
 }

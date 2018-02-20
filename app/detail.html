@@ -10,9 +10,9 @@
 <body id="detail">
   <header>
     <nav>
+      <a href="gamelist.html"> gamelist</a>
       <a href="#content">Skip to content</a>
       <a href="#chatbox">Start chatting</a>
-      <a href="gamelist.html"> gamelist</a>
       <ul>
         <li><a href="gamelist.html" aria-label="Home, current page">Home</a></li>
         <li>
@@ -25,14 +25,15 @@
 
         </li>
         <li><a href="/about.html">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
+  <main>
 
   <article>
     <section>
-      <h1><a href="/">Cuphead</a></h1>
+      <h1 id="content"><a href="/">Cuphead</a></h1>
 
       <img src=/static/images/cuphead.jpg alt="A colorful crayon drawing on the hood of a car." />
 
@@ -61,6 +62,7 @@
 
   </nav>
   </article>
+  </main>
 
 
     <footer id="chatbox">
@@ -103,7 +105,8 @@
             </li>
         </ol>
 
-        <form action="/" method="post">
+        <!-- Form method en action eruit gehaald zodat de pagina niet opnieuw word geredirect-->
+        <form action="detail.html" method="get">
 
             <label for="field-message">Message</label>
             <textarea name="field-message" id="field-message"></textarea>
@@ -113,7 +116,6 @@
         </form>
       </a>
     </footer>
-
 
 </body>
   <script src="static/js/script.js"></script>

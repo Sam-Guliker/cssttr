@@ -14,9 +14,9 @@
 
   <header>
     <nav>
+      <a href="gamelist.html"> gamelist</a>
       <a href="#content">Skip to content</a>
       <a href="#chatbox">Start chatting</a>
-      <a href="gamelist.html"> gamelist</a>
       <ul>
         <li><a href="#" aria-label="Home, current page">Home</a></li>
         <li>
@@ -35,16 +35,13 @@
   </header>
 
   <!-- Hiermee kun je naar de content skippen, het heeft voor de rest geen stijling-->
-  <main id="content">
+  <main>
     <ul>
       <li>
         <article>
           <!-- <h1>This picture has a title</h1> -->
-          <a href="detail.html">
+          <a href="detail.html" id="content">
             <figure>
-              <!-- Portrait -->
-              <!-- <img src="https://vasilis.nl/voto/fotos/klein/170126170241-we-hebben-een-bortusk-1280.jpg" alt="A drawing of a colorful monster on a newspaper" /> -->
-
               <!-- Landscape -->
               <img src=/static/images/cuphead.jpg alt="cuphead game" />
               </a>
@@ -417,7 +414,8 @@
           </li>
       </ol>
 
-      <form action="/" method="post">
+      <!-- Form method en action eruit gehaald zodat de pagina niet opnieuw word geredirect-->
+      <form action="gamelist.html" method="get">
 
           <label for="field-message">Message</label>
           <textarea name="field-message" id="field-message"></textarea>
