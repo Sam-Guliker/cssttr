@@ -3,7 +3,10 @@
 It will contain my scedule and the progress I've made in the couple of weeks for this class.
 We had to make sketchnotes, and assignment that are contained in the webpage.
 
-## Assignments.
+![Webpage][webpage.png]
+[De Opdracht](https://senmetsu.github.io/cssttr/)
+
+## Assesments
 * Make a page for Marijn.
 * Make sketchnotes from the articles you had to read.
 * Fill the webpage with components.
@@ -41,5 +44,3 @@ In week 3 was looking for some nice UX animations. With the animations I want to
 ## References:
 Hierin zitten argumenten voor aanpassingen in de html.
 * https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
-
-[De Opdracht](https://senmetsu.github.io/cssttr/)
