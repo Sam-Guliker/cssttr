@@ -483,6 +483,7 @@ article section img{
   background:var(--chat-bg);
   border-radius: .3em;
   padding-top:0;
+  z-index: 3;
 }
 
 #chatbox ol{
@@ -676,5 +677,15 @@ footer ol li footer{
 @media (max-width: 25em){
   article figure img{
     max-height:12em;
+  }
+  form {
+    width:initial;
+    margin: 2em;
+  }
+  article figure a:nth-child(1){
+    filter:none;
+  }
+  #detail, #about{
+    height:initial;
   }
 }
