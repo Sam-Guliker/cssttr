@@ -1,6 +1,14 @@
 # CSSTR Process
-`This` document is made for my procres in CSSTR class.
+`This` document is made for my progress in CSSTR class.
 It will contain my scedule and the progress I've made in the couple of weeks for this class.
+We had to make sketchnotes, and assignment that are contained in the webpage.
+
+## Assignments.
+* Make a page for Marijn.
+* Make sketchnotes from the articles you had to read.
+* Fill the webpage with components.
+* The webpage should be fixed by using no classes.
+
 
 ## Scedule
 | Week 1        | Week 2|  Week 3  |
@@ -12,19 +20,17 @@ It will contain my scedule and the progress I've made in the couple of weeks for
 ## Design 
 ![design](design.png)
 
-## Week 1
-Onderzoek gedaan naar grid, sketch notes bijgehouden.
-Een design gemaakt.
+## Week 1.
+Done some research for accesibility, and made a design for the assignment.
 
 ## Week 2.
-Week 2 vooral gefocussed om alle alle componenten op de juiste plek neer te zetten.
-En de stijling door te brengen.
+In week 2 I focussed on the components of the web page. I also brought some CSS in place.
 
 ## Week 3.
-Gefocussed op de ux animaties om te zorgen dat de gebruiker goed kan zien waar hij/zij echter is op de pagina.
+In week 3 was looking for some nice UX animations. With the animations I want to help the user on the page.
 
 ### Resources
-* [Gridgarden](http://cssgridgarden.com/) Hier mee leer je beetje bij beetje over grid.
+* [Gridgarden](http://cssgridgarden.com/)
 * [Debugging keyframes](https://css-tricks.com/debugging-css-keyframe-animations/)
 * [Animation States](https://css-tricks.com/css-animation-tricks/)
 * [Form Validation CSS](https://css-tricks.com/form-validation-ux-html-css/)
@@ -32,7 +38,7 @@ Gefocussed op de ux animaties om te zorgen dat de gebruiker goed kan zien waar h
 * [Transform](https://css-tricks.com/almanac/properties/t/transform/)
 * [Focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
-## Referenties:
+## References:
 Hierin zitten argumenten voor aanpassingen in de html.
 * https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
 
