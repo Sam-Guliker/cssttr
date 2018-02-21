@@ -26,11 +26,11 @@ Gefocussed op de ux animaties om te zorgen dat de gebruiker goed kan zien waar h
 ### Resources
 * [Gridgarden](http://cssgridgarden.com/) Hier mee leer je beetje bij beetje over grid.
 * [Debugging keyframes](https://css-tricks.com/debugging-css-keyframe-animations/)
-* [Animaiton States](https://css-tricks.com/css-animation-tricks/)
+* [Animation States](https://css-tricks.com/css-animation-tricks/)
 * [Form Validation CSS](https://css-tricks.com/form-validation-ux-html-css/)
-* [CSS Parenting] (https://css-tricks.com/parent-selectors-in-css/)
-* [Transform] (https://css-tricks.com/almanac/properties/t/transform/)
-* [Focus-within] (https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
+* [CSS Parenting](https://css-tricks.com/parent-selectors-in-css/)
+* [Transform](https://css-tricks.com/almanac/properties/t/transform/)
+* [Focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
 ## Referenties:
 Hierin zitten argumenten voor aanpassingen in de html.
