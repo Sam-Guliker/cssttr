@@ -3,7 +3,7 @@
 It will contain my scedule and the progress I've made in the couple of weeks for this class.
 We had to make sketchnotes, and assignment that are contained in the webpage.
 
-![Webpage][webpage.png]
+![Webpage](webpage.png)
 [De Opdracht](https://senmetsu.github.io/cssttr/)
 
 ## Assesments
