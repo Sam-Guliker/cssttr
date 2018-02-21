@@ -38,7 +38,6 @@
   outline:none;
 }
 
-
 body{
   max-width:75em;
   margin:auto;
@@ -51,7 +50,6 @@ body{
    linear-gradient(110deg, #F95F62 23px, transparent 0),
    linear-gradient(120deg, #1F2D3D 41px, transparent 0);
     background-size: 200px 100%, 70px 100%, 83px 100%;
-
 }
 
 /*
@@ -65,6 +63,7 @@ a,p,label,input,li,a,legend,h1,h2{
   color:var(--color-white);
   text-decoration: none;
 }
+
 nav > a{
   color:var(--color-blue);
   text-decoration:none;
@@ -79,10 +78,10 @@ article a{
   transition:all 0.3s ease-in-out;
   height:100%;
   display: block;
-  
+
 }
 article figure a:nth-child(1){
-  filter: blur(1px) contrast(.9) brightness(.4); 
+  filter: blur(1px) contrast(.9) brightness(.4);
 }
 article figure a:focus{
   filter:none;
@@ -135,9 +134,6 @@ ol>li:nth-child(n+3){
 ol>li:nth-child(4){
   opacity:.4;
 }
-ol li a:focus-within{
-
-}
 
 article section p{
   padding-top:0.4em;
@@ -168,6 +164,11 @@ form {
   opacity: 0;
   animation: fade-in-bottom 0.4s forwards;
 }
+form *:focus{
+    animation: jump .4s ease-in-out forwards;
+    border:none;
+    outline:none;
+}
 
 input[type="checkbox"]{
   width:auto;
@@ -176,6 +177,22 @@ input[type="checkbox"]{
 label[for=field-stay-logged-in]{
   padding:0.7em;
 }
+input[name=field-email]:valid,
+input[name=field-password]:valid {
+  transition: 0.3s all ease-in-out;
+  background-color:#8EB9A8;
+}
+input[name=field-email]:invalid,
+input[name=field-password]:invalid {
+  /* transition: 0.3s all ease-in-out;
+  background-color:#F4828C; */
+}
+input[name=field-email]:invalid:focus:not(:placeholder-shown){
+  /* background-color:blue; */
+  transition: 0.3s all ease-in-out;
+  background-color:#F4828C;
+}
+
 form input {
   outline: 0;
   background: #f2f2f2;
@@ -509,7 +526,15 @@ footer form  label{
 #chatbox ol li footer p{
   color:var(--chat-bg);
 }
-
+footer ol li{
+  padding:1em;
+}
+footer ol li footer{
+  background-color: white;
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 0.6em;
+}
 /*
 
   Animaties
@@ -556,17 +581,28 @@ footer form  label{
     transform: rotate(-5deg)
   }
 }
-@keyframes ext-left {
-  20% {
-    transform: skewX(20deg);
+
+@keyframes jump {
+  0%{
+    transform:translateY(0px);
   }
-  40% {
-    transform: skewY(5deg);
+  20%{
+    transform:translateY(6px);
+  }
+  80%{
+        transform:translateY(-16px);
   }
   100% {
-    transform: skewX(0) skewY(0);
+    transform:translateY(0);
   }
 }
+
+/*
+
+  Media Queries
+
+*/
+
 @media (max-width: 50.75em) {
   body{
     max-width:initial;
@@ -634,7 +670,7 @@ footer form  label{
     margin-bottom:2em;
   }
   article a:nth-child(1){
-    filter: none; 
+    filter: none;
   }
 }
 @media (max-width: 25em){
