@@ -1,36 +1,52 @@
 # CSSTR Process
 `This` document is made for my progress in CSSTR class.
-It will contain my scedule and the progress I've made in the couple of weeks for this class.
-We had to make sketchnotes, and assignment that are contained in the webpage.
+It will contain my schedule and the progress I've made in the couple of weeks for this class.
+We had to make sketch-notes, and assignment that are contained in the webpage.
 
-![Webpage](image.png)  
-[De Opdracht](https://senmetsu.github.io/cssttr/)
+![Webpage](image.png)
+[link](https://senmetsu.github.io/cssttr/)
 
-## Assesments
+## Assessments
 * Make a page for Marijn.
 * Make sketchnotes from the articles you had to read.
 * Fill the webpage with components.
 * The webpage should be fixed by using no classes.
 
-
-## Scedule
-| Week 1        | Week 2|  Week 3  |
+## Schedule
+| Week 1 | Week 2| Week 3 |
 | ------------- |:-------------:| -----:|
-| Research    | Code | Code |
-| Design    | Research |
-| Code | Code    |
+| Research | Code | Code |
+| Design | Research |
+| Code | Code |
 
-## Design 
+## Design
 ![design](design.png)
 
 ## Week 1.
-Done some research for accesibility, and made a design for the assignment.
+Done some research for accessibility, and made a design for the assignment.
+
+* 5.25
+* 6.33
+* 7.36
+* 7.38
+* 7.40
 
 ## Week 2.
-In week 2 I focussed on the components of the web page. I also brought some CSS in place.
+In week 2 I focused on the components of the web page. I also brought some CSS in place.
+
+* Loading spinner — 8.43
+* Transitions on :hovers & :focus— 8.42
+* Cursor — 6.29
+* Extending the clickable area — 6.30
+* Custom check boxes — 6.31
+* (Pseudo)random background — 2.7
 
 ## Week 3.
 In week 3 was looking for some nice UX animations. With the animations I want to help the user on the page.
+
+## What did I learn?
+There is a lot more to learn from CSS. I'm talking about the different pseudo classes and how to target your HTML elements.
+It's also a lot of fun to play with animations to see where the limits are.
 
 ### Resources
 * [Gridgarden](http://cssgridgarden.com/)
@@ -42,5 +58,4 @@ In week 3 was looking for some nice UX animations. With the animations I want to
 * [Focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
 ## References:
-Hierin zitten argumenten voor aanpassingen in de html.
 * https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
