@@ -24,10 +24,7 @@
   margin:0;
   padding:0;
 }
-a:focus,
-button:focus{
-  cursor: pointer;
-}
+
 #login{
   display:flex;
   height:100vh;
@@ -46,6 +43,14 @@ button:focus{
 }
 *:focus{
   outline:none;
+}
+a:focus,
+button:focus{
+  cursor: pointer;
+}
+p:focus{
+  transition: 0.3s all ease-in-out;
+  animation: jump .4s ease-in-out forwards;
 }
 
 body{
@@ -82,10 +87,12 @@ nav > a{
   font-weight: 800;
 }
 nav > a:nth-child(1){
+  padding:1em;
   font-family: Ampersand, helvetica, sans-serif;
   animation: jump .4s ease-in-out forwards;
 }
 nav > a:focus:nth-child(1){
+  background-color:var(--color-white);
   transform:scale(1.5) rotate(180deg);
 }
 article a{
@@ -292,7 +299,6 @@ nav{
 nav > a:nth-child(2),
 nav > a:nth-child(3)  {
   position: absolute;
-  margin-top:-1em;
   height: 1px;
   width: 1px;
   text-align: left;
@@ -303,10 +309,10 @@ nav > a:nth-child(3)  {
   z-index: -9000;
 }
 nav > a:nth-child(2){
-  left:8em;
+  left:11em;
 }
 nav > a:nth-child(3){
-  left:12em;
+  left:23em;
 }
 
 nav > a:nth-child(2):active,
@@ -330,11 +336,12 @@ header > nav > ul >li{
   font-weight: 800;
 }
 header a {
-      transition: all 0.3s ease;
+  padding-top:1em;
+  transition: all 0.3s ease;
 }
 header li a:focus{
-    color:var(--color-blue);
-    transform:scale(1.5) rotate(180deg);
+  color:var(--color-blue);
+  transform:scale(1.5) rotate(180deg);
 }
 header > nav > ul,
 header > nav > ul > li:last-of-type{
@@ -481,7 +488,7 @@ body > footer:target{
   flex-direction: row;
   opacity: 0;
   animation: fade-in-content 4s ease-in-out forwards;
-  /* animation: fade-in-bottom 0.4s forwards; */
+  max-width:max-content;
 }
 #detail article > nav{
   display: flex;
@@ -509,11 +516,15 @@ article section img{
   transform:scale(1) rotate(0);
 }
 #detail article h1 a:focus{
+  color:var(--color-blue);
   background:none;
+  animation: jump .4s ease-in-out forwards;
 }
 #about article h1 a:focus{
+  color:var(--color-blue);
   background:none;
   transform:none;
+  animation: jump .4s ease-in-out forwards;
 }
 
 /*
