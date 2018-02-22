@@ -6,7 +6,7 @@ We had to make sketchnotes, and assignment that are contained in the webpage.
 ![Webpage](image.png)  
 [De Opdracht](https://senmetsu.github.io/cssttr/)
 
-## Assesments
+## Assessments
 * Make a page for Marijn.
 * Make sketchnotes from the articles you had to read.
 * Fill the webpage with components.
@@ -26,11 +26,28 @@ We had to make sketchnotes, and assignment that are contained in the webpage.
 ## Week 1.
 Done some research for accesibility, and made a design for the assignment.
 
+* 5.25 
+* 6.33 
+* 7.36 
+* 7.38
+* 7.40
+
 ## Week 2.
 In week 2 I focussed on the components of the web page. I also brought some CSS in place.
 
+* Loading spinner — 8.43
+* Transitions on :hovers & :focus— 8.42
+* Cursor — 6.29
+* Extending the clickable area — 6.30
+* Custom checkboxes — 6.31
+* (Pseudo)random background — 2.7
+
 ## Week 3.
 In week 3 was looking for some nice UX animations. With the animations I want to help the user on the page.
+
+## What did I learn?
+There is alot more to learn from CSS. I'm talking about the different pseudo classes and how to target your HTML elements.
+Its also alot of fun to play with animations to see where the limits are.
 
 ### Resources
 * [Gridgarden](http://cssgridgarden.com/)
