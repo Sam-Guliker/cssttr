@@ -4,7 +4,7 @@ It will contain my schedule and the progress I've made in the couple of weeks fo
 We had to make sketch-notes, and assignment that are contained in the webpage.
 
 ![Webpage](image.png)
-[link](https://senmetsu.github.io/cssttr/)
+[link](https://sam-guliker.github.io/cssttr/)
 
 ## Assessments
 * Make a page for Marijn.
